@@ -1,0 +1,43 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+#endif
+ #import "AppDelegate.h"
+ #import "HMLocalization.h"
+
+#define DELEGATE ((AppDelegate*)[[UIApplication sharedApplication]delegate])
+#define USER_DEFAULTS [NSUserDefaults standardUserDefaults]
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+#define APP_IDENTIFIER [[NSBundle mainBundle] bundleIdentifier]
+#define IS_OS_7_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+#define TextFont(SIZE)[UIFont fontWithName:@"HelveticaNeueLTStd-MdCn" size:SIZE]
+#define TextFontLight(SIZE)[UIFont fontWithName:@"HelveticaNeueLTCom-LtCn" size:SIZE]
+#define LOCALIZATION [HMLocalization sharedInstance]
+
+
+/*----------------------------- REPLACE YOUR SETTINGS BELOW--------------------------------*/
+
+
+#define SERVER_PATH @"http://realestate.demo.gotests.com/api/"
+#define IMAGE_PATH @"http://realestate.demo.gotests.com/"
+#define AdMob_ID @"ca-app-pub-4601224325399244/1981070219"
+#define TWITTER_CONSUMER_KEY @"qoxsKpvx1sQmCdlHAnbeMKw28"
+#define TWITTER_SECRET_KEY @"o6n92gTxJb9ilILc28eJW2EMoOUd0cFd8W2JNTc7TUBwNHG4Cn"
+#define GOOGLEKEY @"256293764776-mhomoos7niiq20aaimoit5ckh7284ps4.apps.googleusercontent.com"
+
+
+
+/*----------------------------- REPLACE YOUR SETTINGS Above--------------------------------*/
