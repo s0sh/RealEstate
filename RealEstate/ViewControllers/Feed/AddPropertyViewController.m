@@ -3,7 +3,7 @@
 //  RealEstate
 //
 //  Created by Peerbits on 17/06/14.
-//  Copyright (c) 2014 macmini7. All rights reserved.
+//  Copyright (c) 2014 Roman Bigun All rights reserved.
 //
 
 #import "AddPropertyViewController.h"

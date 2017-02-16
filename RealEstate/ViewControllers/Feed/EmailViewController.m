@@ -2,8 +2,8 @@
 //  EmailViewController.m
 //  RealEstate
 //
-//  Created by macmini7 on 04/07/14.
-//  Copyright (c) 2014 macmini7. All rights reserved.
+//  Created by Roman Bigun on 04/07/14.
+//  Copyright (c) 2014 Roman Bigun All rights reserved.
 //
 
 #import "EmailViewController.h"
@@ -134,7 +134,7 @@
 -(void)sendEmailFinished:(NSDictionary*)response{
     
     if ([[response valueForKey:@"successful"] isEqualToString:@"true"]) {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Erminesoft" message:@"Email send successfully !" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Alert" message:@"Email send successfully !" delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [alert show];
         
     }else{

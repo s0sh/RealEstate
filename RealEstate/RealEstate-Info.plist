@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Real Estate Erminesoft</string>
+	<string>Real Estate Alert</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIdentifier</key>
@@ -32,10 +32,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.realestate.erminesoft</string>
+			<string>com.realestate.Alert</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.realestate.erminesoft</string>
+				<string>com.realestate.Alert</string>
 			</array>
 		</dict>
 	</array>
@@ -63,7 +63,7 @@
 	<key>FacebookAppID</key>
 	<string>917045268381200</string>
 	<key>FacebookDisplayName</key>
-	<string>Erminesoft</string>
+	<string>Alert</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>

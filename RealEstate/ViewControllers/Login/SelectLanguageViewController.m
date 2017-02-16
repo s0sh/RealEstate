@@ -2,8 +2,8 @@
 //  SelectLanguageViewController.m
 //  RealEstate
 //
-//  Created by macmini7 on 29/08/14.
-//  Copyright (c) 2014 macmini7. All rights reserved.
+//  Created by Roman Bigun on 29/08/14.
+//  Copyright (c) 2014 Roman Bigun All rights reserved.
 //
 
 #import "SelectLanguageViewController.h"
@@ -104,10 +104,10 @@
 -(void)showPopUp{
  
     if (isNormal) {
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Erminesoft" message:[LOCALIZATION localizedStringForKey:@"languageMsg"] delegate:self cancelButtonTitle:[LOCALIZATION localizedStringForKey:@"ok"] otherButtonTitles: nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Alert" message:[LOCALIZATION localizedStringForKey:@"languageMsg"] delegate:self cancelButtonTitle:[LOCALIZATION localizedStringForKey:@"ok"] otherButtonTitles: nil];
         [alert show];
     }else{
-        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Erminesoft" message:[LOCALIZATION localizedStringForKey:@"laguageset"] delegate:self cancelButtonTitle:[LOCALIZATION localizedStringForKey:@"ok"] otherButtonTitles: nil];
+        UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Alert" message:[LOCALIZATION localizedStringForKey:@"laguageset"] delegate:self cancelButtonTitle:[LOCALIZATION localizedStringForKey:@"ok"] otherButtonTitles: nil];
         [alert show];
     }
     

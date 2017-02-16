@@ -2,8 +2,8 @@
 //  PropertyViewController.m
 //  RealEstate
 //
-//  Created by macmini7 on 07/06/14.
-//  Copyright (c) 2014 macmini7. All rights reserved.
+//  Created by Roman Bigun on 07/06/14.
+//  Copyright (c) 2014 Roman Bigun All rights reserved.
 //
 
 #import "PropertyViewController.h"
@@ -156,7 +156,7 @@
     [self.palceMap regionThatFits:viewRegion];
 }
 - (IBAction)contactAgentClicked:(id)sender {
-    contactAlert=[[UIAlertView alloc]initWithTitle:@"Erminesoft" message:[LOCALIZATION localizedStringForKey:@"contactvia"] delegate:self cancelButtonTitle:[LOCALIZATION localizedStringForKey:@"cancel"] otherButtonTitles:[LOCALIZATION localizedStringForKey:@"sms"],[LOCALIZATION localizedStringForKey:@"email"],[LOCALIZATION localizedStringForKey:@"phone"], nil];
+    contactAlert=[[UIAlertView alloc]initWithTitle:@"Alert" message:[LOCALIZATION localizedStringForKey:@"contactvia"] delegate:self cancelButtonTitle:[LOCALIZATION localizedStringForKey:@"cancel"] otherButtonTitles:[LOCALIZATION localizedStringForKey:@"sms"],[LOCALIZATION localizedStringForKey:@"email"],[LOCALIZATION localizedStringForKey:@"phone"], nil];
     [contactAlert show];
     
 }
@@ -504,9 +504,9 @@
     facebook.FBDelegate=self;
     
     NSString * name = [NSString stringWithFormat:@"%@",[[_response valueForKey:@"Property"] valueForKey:@"title"]];
-    NSString * caption = @"ERMINESOFT";
+    NSString * caption = @"Alert";
     NSString * description = [NSString stringWithFormat:@"%@",[[_response valueForKey:@"Property"] valueForKey:@"description"]];
-    NSString * titlelink = @"http://www.erminesoft.com";
+    NSString * titlelink = @"http://www.Alert.com";
     NSString * imageurl = [NSString stringWithFormat:@"%@%@",IMAGE_PATH,[[_response valueForKey:@"Property"] valueForKey:@"image"]];
 
     NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:

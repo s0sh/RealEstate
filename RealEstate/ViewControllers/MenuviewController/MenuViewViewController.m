@@ -2,8 +2,8 @@
 //  MenuViewViewController.m
 //  RealEstate
 //
-//  Created by macmini7 on 09/06/14.
-//  Copyright (c) 2014 macmini7. All rights reserved.
+//  Created by Roman Bigun on 09/06/14.
+//  Copyright (c) 2014 Roman Bigun All rights reserved.
 //
 
 #import "MenuViewViewController.h"
@@ -112,7 +112,7 @@
 - (IBAction)loginClicked:(id)sender {
     
     if (isLoggedIn || DELEGATE.isFacebookLogin) {
-        UIAlertView *Alert=[[UIAlertView alloc]initWithTitle:@"Erminesoft" message:[LOCALIZATION localizedStringForKey:@"sure"] delegate:self cancelButtonTitle:[LOCALIZATION localizedStringForKey:@"no"] otherButtonTitles:[LOCALIZATION localizedStringForKey:@"yes"], nil];
+        UIAlertView *Alert=[[UIAlertView alloc]initWithTitle:@"Alert" message:[LOCALIZATION localizedStringForKey:@"sure"] delegate:self cancelButtonTitle:[LOCALIZATION localizedStringForKey:@"no"] otherButtonTitles:[LOCALIZATION localizedStringForKey:@"yes"], nil];
         [Alert show];
         return;
     }

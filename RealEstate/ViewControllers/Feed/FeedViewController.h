@@ -2,8 +2,8 @@
 //  FeedViewController.h
 //  RealEstate
 //
-//  Created by macmini7 on 04/06/14.
-//  Copyright (c) 2014 macmini7. All rights reserved.
+//  Created by Roman Bigun on 04/06/14.
+//  Copyright (c) 2014 Roman Bigun All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

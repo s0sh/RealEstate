@@ -12,7 +12,7 @@
 
 + (void)showAlert:(NSString*)alert{
     NSString *capitalized = [[[alert substringToIndex:1] uppercaseString] stringByAppendingString:[alert substringFromIndex:1]];
-    UIAlertView *anAlert = [[UIAlertView alloc] initWithTitle:@"Erminesoft" message:capitalized delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    UIAlertView *anAlert = [[UIAlertView alloc] initWithTitle:@"Alert" message:capitalized delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [anAlert show];
 }
 

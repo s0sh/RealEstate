@@ -2,8 +2,8 @@
 //  RegisterViewController.m
 //  RealEstate
 //
-//  Created by macmini7 on 05/06/14.
-//  Copyright (c) 2014 macmini7. All rights reserved.
+//  Created by Roman Bigun on 05/06/14.
+//  Copyright (c) 2014 Roman Bigun All rights reserved.
 //
 
 #import "RegisterViewController.h"
@@ -110,7 +110,7 @@
 
 //Action methods
 - (IBAction)takePhotoClicked:(id)sender {
-    photoAlert=[[UIAlertView alloc]initWithTitle:@"Erminesoft" message:@"Select image via ?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Library",@"Camera", nil];
+    photoAlert=[[UIAlertView alloc]initWithTitle:@"Alert" message:@"Select image via ?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Library",@"Camera", nil];
     [photoAlert show];
 
 }

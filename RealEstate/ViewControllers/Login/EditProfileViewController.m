@@ -2,8 +2,8 @@
 //  EditProfileViewController.m
 //  RealEstate
 //
-//  Created by macmini7 on 21/06/14.
-//  Copyright (c) 2014 macmini7. All rights reserved.
+//  Created by Roman Bigun on 21/06/14.
+//  Copyright (c) 2014 Roman Bigun All rights reserved.
 //
 
 #import "EditProfileViewController.h"
@@ -239,7 +239,7 @@
 
 //Action methods
 - (IBAction)takePhotoClicked:(id)sender {
-    photoAlert=[[UIAlertView alloc]initWithTitle:@"Erminesoft" message:@"Select image via ?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Library",@"Camera", nil];
+    photoAlert=[[UIAlertView alloc]initWithTitle:@"Alert" message:@"Select image via ?" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Library",@"Camera", nil];
     [photoAlert show];
     
 }
@@ -277,7 +277,7 @@
 -(void)regiterFinished:(NSDictionary*)response{
     NSLog(@"Register view controller %@",response);
     if ([[response valueForKey:@"successful"] isEqualToString:@"true"]) {
-        update=[[UIAlertView alloc]initWithTitle:@"Erminesoft" message:[response valueForKey:@"message"] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        update=[[UIAlertView alloc]initWithTitle:@"Alert" message:[response valueForKey:@"message"] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
         [update show];
         [[NSUserDefaults standardUserDefaults]setValue:[response valueForKey:@"User"] forKey:@"user"];
         [[NSUserDefaults standardUserDefaults] synchronize];

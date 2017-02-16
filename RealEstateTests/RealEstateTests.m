@@ -3,7 +3,7 @@
 //  RealEstateTests
 //
 //  Created by Roman Bigun on 12/14/15.
-//  Copyright © 2015 macmini7. All rights reserved.
+//  Copyright © 2015 Roman Bigun All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
